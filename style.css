@@ -16,7 +16,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@media (min-width: 600px) and (max-width: 899px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 599px) {
+    body{
+        overflow-x: hidden;
+    }
+}
 body {
     overflow-x: hidden;
 }
@@ -917,9 +926,9 @@ ul li a {
 }
 @media (max-width: 599px) {
     .main_container {
-        margin-left: 2rem;
-        margin-right: 2rem;
-
+        margin: 0;
+        position: relative;
+        right: 3rem;
     }
     .sub_cont{
         display: grid;
@@ -934,6 +943,8 @@ ul li a {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 77vw;
+        position: relative;
+        left: 2rem;
     }
     .texts h2{
         font-size: 1.5rem;
@@ -1107,7 +1118,10 @@ ul li a {
 @media (max-width: 599px) {
     .card_content {
         grid-template-columns: repeat(1, 1fr);
-        margin: 0 3rem;
+        justify-items: center;
+        position: relative;
+        right: 8.8rem;
+
     }
     .main_text_box h2 {
         font-size: 1.5rem;
